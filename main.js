@@ -22,7 +22,7 @@ function Modes() {
 
     else if(p.innerHTML == stringModes[1]) {
         name.style.color = "#fff"
-        instaName.style.color = "#00d4ff"
+        instaName.style.color = "#fff"
         document.body.classList.add("darkMode");
         document.body.classList.remove("lightMode");
         iconLua.style.display = "none";
