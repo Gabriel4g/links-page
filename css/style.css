@@ -74,16 +74,25 @@ header p {
     cursor: default;
 }
 
-main {
-    display: flex;
+main, #projects {
+    /* display: flex;
     flex-wrap: wrap;
     height: auto;
     width: 100%;
     max-width: 40rem;
-    gap: 2rem;
+    gap: 2rem; */
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 80% 80%;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 40rem;
+    
 }
 
-main a {
+main a, 
+#projects a {
     height: 8rem;
     width: 40rem;
     max-width: 100%;
@@ -98,13 +107,15 @@ main a {
     gap: 1rem;
 }
 
-main a:hover {
+main a:hover, 
+#projects a:hover {
     opacity: 0.9;
     transform: scale(1.05);
     transition: all .4s ease;
 }
 
-main a:first-child {
+main 
+a:first-child {
     background: linear-gradient(
         45deg,
         #f09433 0%,
@@ -115,11 +126,13 @@ main a:first-child {
       );
 }
 
-main a:nth-child(2) {
+main 
+a:nth-child(2) {
     background: linear-gradient(70deg, #5830bb 13%, var(--second-color) 95%);
 }
 
-main a:nth-child(3) {
+main 
+a:nth-child(3) {
 
     background: linear-gradient(
         261.65deg,
@@ -128,12 +141,33 @@ main a:nth-child(3) {
       );
 }
 
-main a:nth-child(4) {
+main 
+a:nth-child(4) {
     background: linear-gradient(
         90deg,
         rgb(86, 123, 246) 0%,
         rgba(47, 41, 157, 1) 100%
       );
+}
+
+#projects {
+    margin-top: 25px;
+}
+
+#projects a {
+    background: linear-gradient(
+        261.65deg,
+        #34064e 0%,
+        #361980 100%
+      );
+}
+
+h2 {
+    font-size: 23px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-top: 25px;
 }
 
 .darkMode {
@@ -158,12 +192,18 @@ main a:nth-child(4) {
     }
 }
 
-@media (max-width: 750px) {
-    main {
-        max-width: 50rem;
+@media (max-width: 768px) {
+    main, 
+    #projects {
+        display: flex;
+        flex-direction: column;
+        max-width: 60rem;
     }
 
-    main a {
-        width: 50rem;
+    main a, 
+    #projects a {
+        height: 95px;
+        gap: 2.5rem;
+        width: 100%;
     }
 }

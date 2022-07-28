@@ -1,14 +1,16 @@
+const stringModes = ["Light", "Dark"];
+const iconSol = document.querySelector("#sol");
+const iconLua = document.querySelector("#lua");
+let p = document.querySelector(".paragrafo-invisivel");
+
+const instaName = document.querySelector(".instaName")
+
 function animation(rotateAnimation) {
     return rotateAnimation.style.animation = "rotate 900ms ease-in-out"
 }
 
 function Modes() {
-    const stringModes = ["Light", "Dark"];
-    const iconSol = document.querySelector("#sol");
-    const iconLua = document.querySelector("#lua");
-    let p = document.querySelector(".paragrafo-invisivel");
     const name = document.querySelector(".name");
-    const instaName = document.querySelector(".instaName")
 
     if (p.innerHTML == stringModes[0]) {
         name.style.color = "#0e091b";
@@ -16,11 +18,11 @@ function Modes() {
         document.body.classList.add("lightMode");
         iconSol.style.display = "none";
         iconLua.style.display = "block";
-        animation(iconLua);
+        animation(iconLua)
         p.innerHTML = stringModes[1];
     }
 
-    else if(p.innerHTML == stringModes[1]) {
+    else if (p.innerHTML == stringModes[1]) {
         name.style.color = "#fff"
         instaName.style.color = "#fff"
         document.body.classList.add("darkMode");
@@ -29,5 +31,5 @@ function Modes() {
         iconSol.style.display = "block";
         p.innerHTML = stringModes[0];
         animation(iconSol);
-}
+    }
 }
