@@ -1,8 +1,7 @@
 ## <i>💤<br/>  
 
-![Captura de tela de 2022-07-30 15-07-34](https://user-images.githubusercontent.com/92071360/181994672-5c63b04a-3ee9-45bb-a813-3ad8cf89012d.png)
+![Captura de tela de 2022-08-21 23-23-01](https://user-images.githubusercontent.com/92071360/185839213-9a5903e8-a870-4acb-a9e4-b188c99cbcfb.png)
 
 <hr/>
 
-## Create by  ↴
-## 💤 <a href="https://instagram.com/gabrielbarrozs">Gabriel<a/>
+## 💤 Create by <a href="https://instagram.com/gabrielbarrozs">Gabriel<a/>
